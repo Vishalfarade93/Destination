@@ -1,0 +1,23 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: TOURIST-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/tourist
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: tourist
+    username: root
+    password: Vishal@4545
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      file-size-threshold: 1KB
+      max-file-size: 50MB
+      max-request-size: 50MB
+razorpay:
+  key_id: rzp_test_U6LXs2MWCEfepJ
+  key_secret: QTFDzsD2iyGLXMWDe50sf8kY
